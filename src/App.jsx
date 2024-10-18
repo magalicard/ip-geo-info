@@ -4,13 +4,13 @@ import { useEffect, useState } from 'react';
 function App() {
 
 const [ipData, setIpData] = useState(null);
+const API_URL = import.meta.env.VITE_API_URL
 
 useEffect(() => {
-fetch("https://api.techniknews.net/ipgeo/192.129.244.55")
+fetch(`${API_URL}192.129.244.55`) 
 .then((res) => res.json())
 .then((data) => {
-  console.log(data)
-  setIpData(data)
+  setIpData(data) 
 })
 .catch(() => {
   console.error("La peticion fallo")
