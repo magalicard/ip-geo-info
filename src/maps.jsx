@@ -1,21 +1,19 @@
-import React from 'react';
+
+import React, { useRef, useEffect } from 'react';
 import "mapkick/bundle";
-import { useRef, useEffect } from 'react';
 
-const Maps = () => {
-    const mapRef = useRef(null); // Referencia para el contenedor del mapa
+const Maps = ({ latitude, longitude }) => {
+  const mapRef = useRef(null);
 
-    useEffect(() => {
-        if (mapRef.current) {
-            new Mapkick.Map(mapRef.current, [
-                { latitude: 45.5152, longitude: -122.678 }
-            ]);
-        }
-    }, []);
+  useEffect(() => {
+    if (mapRef.current && latitude && longitude) {
+      new Mapkick.Map(mapRef.current, [
+        { latitude, longitude }
+      ]);
+    }
+  }, [latitude, longitude]); // El efecto se ejecutará cuando cambien las coordenadas
 
-    return <div ref={mapRef} style={{ height: "400px", width: "100%" }}></div>;
+  return <div ref={mapRef} style={{ height: "400px", width: "100%" }}></div>;
 };
 
-   
-  
-  export default Maps;
+export default Maps;
