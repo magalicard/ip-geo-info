@@ -5,6 +5,7 @@ import Home from './components/Home';
 import InputIp from './components/inputIp';
 import SpeedTest from './components/speedTest';
 import WhatIsMyIp from './components/whatIsMyIp';
+import InfoIp from './components/infoIp';
 
 const App = () => {
   
@@ -17,7 +18,8 @@ const App = () => {
         <Navbarr/>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/infoip' element={<InputIp/>} />
+          <Route path='/infoip' element={<InfoIp/>} />
+          <Route path='/inputIp' element={<InputIp/>} />
           <Route path='/speedtest' element={<SpeedTest />} />
           <Route path='/whatismyip' element={<WhatIsMyIp />} />
         </Routes>
