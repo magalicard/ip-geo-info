@@ -1,0 +1,30 @@
+.custom-navbar {
+    background: linear-gradient(135deg, #6730ec, #895ff0);
+  }
+  
+  .navbar-brand, .nav-link {
+    color: white !important;
+  }
+  
+  .nav-link:hover, .navbar-brand:hover {
+    color: #dcdcdc !important; /* Cambia el color al pasar el cursor, si lo deseas */
+  }
+  
+  .navbar-toggler-icon {
+    background-color: white; /* Color del icono del toggler */
+  }
+  
+  /* Para el color del botón de búsqueda */
+  .form-inline .btn {
+    color: white !important;
+    border-color: white !important;
+  }
+  
+  .form-inline .btn:hover {
+    color: #dcdcdc !important;
+  }
+  
+  .navbar-logo {
+    width: 80px; /* Ajusta el tamaño del logo según tus necesidades */
+    height: auto;
+  }
