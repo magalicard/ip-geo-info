@@ -1,7 +1,7 @@
 
 import React, { useRef, useEffect } from 'react';
 import "mapkick/bundle";
-
+import '../styles/maps.css'
 const Maps = ({ latitude, longitude }) => {
   const mapRef = useRef(null);
 
@@ -11,9 +11,13 @@ const Maps = ({ latitude, longitude }) => {
         { latitude, longitude }
       ]);
     }
-  }, [latitude, longitude]); // El efecto se ejecutará cuando cambien las coordenadas
+  }, [latitude, longitude]); 
 
-  return <div ref={mapRef} style={{ height: "400px", width: "100%" }}></div>;
+  return (
+    <div className="map-container">
+    <div ref={mapRef} style={{ height: '400px', width: '100%', borderRadius: '8px', overflow: 'hidden' }}></div>
+  </div>
+  )
 };
 
 export default Maps;

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Maps from '../maps';
+import Maps from './maps';
+
+
 export const Home = () => {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -35,22 +37,20 @@ export const Home = () => {
     return(
      <div>
       <h1>Tu IP es: </h1>
-      <h2>{data.ip}</h2>
+      <h2 className='colorPurple'>{data.ip}</h2>
       <p>¿Como funcionan las IP?</p>{/* añadir el link para que lleve a la pagina de la info */}
 
       <h2>Datos obtenidos de tu IP: </h2>
       <p><strong>Pais: </strong>{data.country}</p>
       <p><strong>Region: </strong>{data.regionName}</p>
       <p><strong>Ciudad:</strong> {data.city}</p>
-      <p><strong>Mobile:</strong> {data.mobile ? 'Yes' : 'No'}</p>
+      <p><strong>Moneda que utilizas: </strong>{data.currency}</p>
       <p>
         {data.mobile 
           ? "Estás conectado desde tu celular." 
           : "Estás conectado desde tu computadora."}
       </p>
-      <p><strong>Moneda que utilizas: </strong>{data.currency}</p>
-      
-      <h2>Ubicación aproximada: </h2>q
+      <h2>Ubicación aproximada: </h2>
       
       <Maps latitude={data.lat} longitude={data.lon}/>
       

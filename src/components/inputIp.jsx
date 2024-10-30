@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import Ip from '../Ip';
-import Maps from '../maps';
+import Maps from './maps';
 
 export const InputIp = () => {
   const [ip, setIp] = useState(""); 

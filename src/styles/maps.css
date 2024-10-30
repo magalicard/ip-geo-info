@@ -1,0 +1,15 @@
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    width: 100%;
+    max-width: 600px; /* Ajusta el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+  }
+  
+ 
