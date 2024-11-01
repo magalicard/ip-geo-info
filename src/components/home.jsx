@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Maps from './maps';
-
+import { Link } from 'react-router-dom';
+import computer1 from "../assets/computer1.png"
+import phone from "../assets/phone.png";
+import '../styles/home.css';
 
 export const Home = () => {
     const [data, setData] = useState(null);
@@ -38,8 +41,18 @@ export const Home = () => {
      <div>
       <h1>Tu IP es: </h1>
       <h2 className='colorPurple'>{data.ip}</h2>
-      <p>¿Como funcionan las IP?</p>{/* añadir el link para que lleve a la pagina de la info */}
-
+      <h2>⚠️¿Tu información está en peligro?⚠️</h2>
+      <Link to="/infoip" style={{color: '#6730ec' , textDecoration: 'underline'}} >
+      Haz click aqui para ver información sobre tu IP
+      </Link>
+      <div className='contenedor-imagen'>
+      <img 
+                    src={data.mobile ? phone : computer1} 
+                    alt={data.mobile ? "Imagen de teléfono" : "Imagen de computadora"} 
+                    style={{ width: '50%' }} 
+                    className='imagen-pequena' 
+                />
+      </div>
       <h2>Datos obtenidos de tu IP: </h2>
       <p><strong>Pais: </strong>{data.country}</p>
       <p><strong>Region: </strong>{data.regionName}</p>

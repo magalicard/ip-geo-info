@@ -1,0 +1,11 @@
+.contenedor-imagen {
+    display: flex;                /* Utiliza flexbox para centrar el contenido */
+    justify-content: center;      /* Centra horizontalmente */
+    align-items: center;          /* Centra verticalmente (opcional) */
+    height: 50vh;               /* Ocupar toda la altura de la ventana */
+}
+
+.imagen-pequena {
+    max-width: 35%;               /* Ajusta el tamaño de la imagen al 50% del contenedor */
+    height: auto;                 /* Mantiene la proporción de la imagen */
+}
