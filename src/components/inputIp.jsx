@@ -30,8 +30,12 @@ export const InputIp = () => {
         
         <h2>Datos de la IP:</h2>
         <Ip ipData={ipData} /> 
-        {ipData && <Maps latitude={ipData.lat} longitude={ipData.lon} />} 
-        
+        {ipData && (
+                <>
+                    <h2>Ubicación aproximada:</h2>
+                    <Maps latitude={ipData.lat} longitude={ipData.lon} />
+                </>
+            )}
       </div>
     )
 }

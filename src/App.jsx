@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Navbarr } from './layouts/navbarr';
-import Home from './components/Home';
+import Home from './components/home';
 import InputIp from './components/inputIp';
 import SpeedTest from './components/speedTest';
 import InfoIp from './components/infoIp';
