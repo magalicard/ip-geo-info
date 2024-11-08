@@ -44,6 +44,11 @@ export const Navbarr = () => {
               Speed Test
             </Link>
           </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/speedtestInfo">
+              Speed Test Info
+            </Link>
+          </li>
         </ul>
         <form className="form-inline my-2 my-lg-0">
           <input

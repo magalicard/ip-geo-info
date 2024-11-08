@@ -1,0 +1,32 @@
+/* SpeedTestBlog.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.info-post {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.info-post img {
+  max-width: 60%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+.info-post h1, .info-post h2, .info-post h3 {
+  color: #333;
+  margin-top: 20px;
+}
+
+.info-post p, .info-post ul, .info-post ol {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.info-post ul, .info-post ol {
+  padding-left: 40px;
+}

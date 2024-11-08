@@ -1,0 +1,53 @@
+/* SpeedTestComponent.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Asegurar tema claro */
+:root {
+    color-scheme: light;
+  }
+  
+  .page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff; 
+    
+    max-width: 600px; 
+    width: 100%;
+  }
+  
+  .frame-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+    position: relative;
+
+  }
+  
+  .iframe {
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .provider-link {
+    color: #6730ec;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  .provider-link:hover {
+    text-decoration: underline; 
+  }
